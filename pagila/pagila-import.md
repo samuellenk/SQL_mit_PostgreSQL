@@ -1,14 +1,26 @@
 # Schritte zum Import der Datenbank "pagila"
 
-- notwendige Dateien liegen im Archiv [pagila-master.zip](https://github.com/samuellenk/SQL_mit_PostrgeSQL/blob/main/pagila/pagila-master.zip)
+## Hinweis
 
-## Vorgehen
+- für einen schnellen **Import** ist die Verwendung **auf dem PostgreSQL-Server empfohlen**, statt einem DB-Client wie DBeaver
+- mehr zu *pagila* findest du im [GitHub Projekt](https://github.com/devrimgunduz/pagila)
 
-1. ```psql -c "CREATE DATABASE pagila;"```
-2. ```psql -d pagila -f pagila-schema.sql```
-3. ```psql -d pagila -f pagila-data.sql```
+## notwendige Dateien herunterladen
 
-## weitere Infos zu "pagila"
+```bash
+wget https://raw.githubusercontent.com/devrimgunduz/pagila/refs/heads/master/pagila-schema.sql
+wget https://raw.githubusercontent.com/devrimgunduz/pagila/refs/heads/master/pagila-data.sql
+```
 
-- findest du [hier](https://github.com/devrimgunduz/pagila)
+## Import ausführen
 
+```bash
+psql -c "CREATE DATABASE pagila;"
+psql -d pagila -f pagila-schema.sql
+psql -d pagila -f pagila-data.sql
+```
+
+## Verifizierung
+
+- über einen Client oder `psql` sollte man sich dann zu pagila verbinden können
+- und im Schema diverse Tabellen, Views und andere Elemente sehen können
