@@ -1,4 +1,4 @@
-# SQL mit PostgreSQL
+# Kurs: SQL mit PostgreSQL
 
 Dieses Repository enthält den Code zum Kurs [SQL mit PostgreSQL](https://linux-trainings.de/sql-mit-postgresql/)
 
@@ -10,6 +10,6 @@ So kannst du dir eine Kopie von diesem Repository erstellen:
 git clone https://github.com/samuellenk/SQL_mit_PostgreSQL.git
 ```
 
-## Kontakt
+## Feedback und Kontakt
 
-Bei Fragen und Vorschlägen kannst du gern mit uns [Kontakt aufnehmen](https://linux-trainings.de/kontakt/)
+Bei Fragen und Vorschlägen kannst du gern [Kontakt aufnehmen](https://linux-trainings.de/kontakt/)
